@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./Footer";
+import Header from "./Header";
+import Sqr from "./Sqr";
+import Users from "./Users";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Users />
+      <Sqr num={5} />
+      <Sqr num={6} />
+      <Sqr num={7} />
+      <Footer />
+    </>
   );
 }
 
 export default App;
+
+//CW1 Create footer component and import it
+//in App component
+
+//CW2 Create Sqr component and import it in 
+//App component
